@@ -5,8 +5,36 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Discord Formatter</title>
+
+	<link rel="stylesheet" href="main.css">
+	<link rel="stylesheet" href="input.css">
 </head>
 <body>
-	<h1>hello</h1>
+	<article>
+		<h1>Discord Formatter</h1>
+		<p>A website made to make it easier to send pretty messages in Discord</p>
+	</article>
+	<div class="input">
+		<ul class="no-bullets">
+			<li>
+				<button id="boldButton">Bold</button>
+			</li>
+			<li>
+				<button id="italicButton">Italic</button>
+			</li>
+			<li>
+				<button id="underlineButton">Underline</button>
+			</li>
+			<li>
+				<button id="strikethroughButton">Strikethrough</button>
+			</li>
+		</ul>
+		<textarea id="inputTextarea"></textarea>
+	</div>
+	<div class="output">
+
+	</div>
+	<script type="text/javascript" src="jquery.js"></script>
+	<script type="text/javascript" src="index.js"></script>
 </body>
 </html>
