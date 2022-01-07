@@ -45,3 +45,10 @@ $('.input > ul > li > button').on('click', function(event) {
 	var input = document.getElementById("inputTextarea");
 	setCaretPosition(input, cursorPos + before.length);
 });
+
+$('#inputTextarea').bind('input propertychange', function() {
+	const textarea = $('#inputTextarea');
+	const outputText = $("#outputText");
+
+	$("#outputText").html(discordMarkdown.toHTML(textarea.val()).replace("> ", "<div class='citation'></div>"));
+});
